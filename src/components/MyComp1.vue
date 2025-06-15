@@ -11,9 +11,9 @@
       <v-btn @click="isLoading = !isLoading">isLoading</v-btn>
     </v-card-actions>
   </v-card>
+  <MyFirebaseFood />
 </template>
 <script setup>
 import { ref } from "vue";
-
 const isLoading = ref(false);
 </script>

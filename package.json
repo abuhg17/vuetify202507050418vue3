@@ -11,8 +11,12 @@
   "dependencies": {
     "@fontsource/roboto": "5.2.5",
     "@mdi/font": "7.4.47",
+    "firebase": "^11.9.1",
+    "sweetalert2": "^11.22.0",
+    "vee-validate": "^4.15.1",
     "vue": "^3.5.13",
-    "vuetify": "^3.8.1"
+    "vuetify": "^3.8.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
