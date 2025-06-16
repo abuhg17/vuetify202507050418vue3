@@ -6,10 +6,9 @@
       </v-col>
       <v-col cols="auto">
         <v-btn @click="ClearForm()" color="orange">clear</v-btn>
-        <v-btn color="grey">
-          <a :href="`#${formData.foodname}`">
-            Go to {{ formData.foodname }}</a
-          ></v-btn
+
+        <a :href="`#${formData.foodname}`" class="linkbtn1">
+          Go to {{ formData.foodname }}</a
         >
       </v-col>
       <v-col cols="auto">
@@ -142,9 +141,9 @@
       <div v-for="item in myvue3food" :key="item.id">
         <v-col cols="auto">
           <div :id="item.foodname"></div>
-          <v-btn color="blue">
-            <a href="#" class="button is-link">top</a>
-          </v-btn>
+
+          <a href="#" class="linkbtn2">top</a>
+
           <v-btn @click="SelectForUpadate(item)" color="green"> select </v-btn>
 
           <v-btn @click="UpdateByForm(item)" color="pink"> update </v-btn>
@@ -510,5 +509,19 @@ function AutoNew(
 .myBorder {
   border: 1px solid;
   display: inline-block;
+}
+.linkbtn1 {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid;
+  color: black;
+  background-color: cyan;
+}
+.linkbtn2 {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid;
+  color: black;
+  background-color: lightblue;
 }
 </style>
