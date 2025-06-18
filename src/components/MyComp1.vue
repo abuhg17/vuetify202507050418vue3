@@ -1,5 +1,9 @@
 <template>
   <h1>My Comp 1</h1>
+
+  <div v-for="arr in sortAlg.is">
+    {{ arr }}
+  </div>
   <v-btn @click="toggleTheme">toggle theme</v-btn>
   <v-card
     :loading="isLoading"
@@ -19,6 +23,12 @@
   <MyFirebaseFood />
 </template>
 <script setup>
+import { SortAlg } from "@/dsa/SortAlg.js";
+let sortAlg = new SortAlg([
+  1111, 333, 222, 111, 2222, 3333, 11, 22, 33, 3, 2, 1,
+]);
+sortAlg.InsertSort();
+
 import { useTheme } from "vuetify";
 const theme = useTheme();
 function toggleTheme() {
