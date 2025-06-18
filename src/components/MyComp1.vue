@@ -23,7 +23,7 @@
   <MyFirebaseFood />
 </template>
 <script setup>
-import { SortAlg } from "@/dsa/sortAlg.js";
+import { SortAlg } from "@/dsa/sortalg.js";
 let sortAlg = new SortAlg([
   1111, 333, 222, 111, 2222, 3333, 11, 22, 33, 3, 2, 1,
 ]);
